@@ -12,18 +12,7 @@ services:
     volumes:
       - ./app:/code/app
       - paddle_models:/models
-    depends_on:
-      - ollama
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-
-  ollama:
-    image: ollama/ollama
-    container_name: ollama
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama_models:/root/.ollama
 
 volumes:
   paddle_models:
-  ollama_models:

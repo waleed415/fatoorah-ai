@@ -21,6 +21,7 @@ async def extract(
     dpi: int = Query(200, ge=100, le=400, description="PDF render resolution"),
     max_pages: int = Query(5, ge=1, le=20),
 ):
+    print(f"Received file: {file.filename}, content type: {file.content_type}")
     data = await file.read()
 
     if file.content_type in IMAGE_TYPES:
@@ -37,12 +38,14 @@ async def extract(
         raise HTTPException(415, "Upload a PNG, JPG or PDF file")
 
     engine = request.app.state.ocr_engine
+    print(f"Processing {len(images)} images for OCR")
     pages = [await run_in_threadpool(process_image, engine, img) for img in images]
     qr_text = await run_in_threadpool(first_qr_text, images)
 
     #full_text="\n".join(l["text"] for l in pages)
 
     try:
+        print("Extracting fields with LLM")
         fields = await run_in_threadpool(extract_with_llm, pages)
     except LLMConfigError as exc:
         raise HTTPException(503, str(exc))

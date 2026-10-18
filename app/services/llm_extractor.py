@@ -17,7 +17,10 @@ INVOICE_JSON_SCHEMA = {
     "type": "object",
     "properties": {
         "invoiceNumber": {"type": ["string", "null"]},
-        "customerName": {"type": ["string", "null"]},
+        "customerName_en": {"type": ["string", "null"]},
+        "customerName_ar": {"type": ["string", "null"]},
+        "invoiceDate": {"type": ["string", "null"]},
+        "dueDate": {"type": ["string", "null"]},
         "invoiceType": {
             "type": "string",
             "enum": ["sales", "purchase", "credit_note", "debit_note", "unknown"],
@@ -27,16 +30,17 @@ INVOICE_JSON_SCHEMA = {
             "items": {
                 "type": "object",
                 "properties": {
-                    "description": {"type": ["string", "null"]},
+                    "description_en": {"type": ["string", "null"]},
+                    "description_ar": {"type": ["string", "null"]},
                     "quantity": {"type": ["number", "null"]},
                     "unitPrice": {"type": ["number", "null"]},
                     "total": {"type": ["number", "null"]},
                 },
-                "required": ["description", "quantity", "unitPrice", "total"],
+                "required": ["description_en", "description_ar", "quantity", "unitPrice", "total"],
             },
         },
     },
-    "required": ["invoiceNumber", "customerName", "invoiceType", "lineItems"],
+    "required": ["invoiceNumber", "customerName_en", "customerName_ar", "invoiceType", "lineItems"],
 }
 
 SYSTEM_PROMPT = """You extract structured data from the OCR text of invoices.

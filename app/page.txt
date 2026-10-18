@@ -1,0 +1,39 @@
+ --- Page 1 ---
+توب نوتباد | Tax Invoice
+Top Notepad | فاتورةضريبية
+:121N 300011122233343
+صب  40الدمام  3032المملكة العربية السعودي
+ PO Box 40 - Dammam 3032 -- Kingdom of Saudi Arabia
+infoa topnotepad.com
+Bill To:
+فاتورة إلى
+خان للتجارة | Invoice # | وو
+لرقم الضري 300011122244453 | رقم الفاتورة
+ص .ب  400 .الظهران30003 المملكة العربية السعودية | Invoice Date |  | 06-Fcb-2023
+PO Box 400, Dhahran-30003, Kingdom of Saudi Arabi | تاريخ الفاتورة
+Duc Date |  | 06-Fcb-2023
+Shipping Address | تاريخ الاستحقاق
+ص .ب 40 ( الظهران3003 المملكة العربية السعودية | PO# | P0R20230205أ
+ P0 Box 401, Dhahran-30003, Kingdom of Saudi Arabi | رقم أمر الشراء
+ | Description | Qty | Rate | Taxable Amoumt | Ta SAR | Net Amount
+الوصف | الكمية | معدل | المبلغ الخاضع | الضريبة | المبلغ الصافي
+للضريبة
+ | صمام كروي عائم  نحاس  1(بوصة  25 (ملم سن |  | 100.00 | 300.00 | 45.00 | 345.00
+ذكر ملولب  مع ملحقاته  صنع في الصين  /إنجلت | (VAT
+ Float Ball Valve, Brass I 25 mm Male
+threaded type, with all accessories, Made
+im ChinaEngland
+2 | عمام كروي عوامة نحاس  32م سن ذكر ملولب مع | 2 | 150.00 | 300.00 | 45.00 | 345.00
+ملحقات صنع في الصين /انجلترا | (VAT5(
+Float Ball Valve, Brass 32 mm, Male
+threaded, with accessories, Miade in China
+England
+Total | 600.00 | 90.00 | 690.00
+الإجمالي
+Net Amount | SAR 690.00
+المبلغ الصافي
+Amount Im Words: Six Hundred Ninety Riyal
+:VAT:
+Ninety Riyals
+Total
+Six Ninety Riyal
